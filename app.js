@@ -1,4 +1,5 @@
 const express = require('express');
+const serverless = require('serverless-http');
 const bodyParser = require('body-parser');
 const timeout = require('connect-timeout');
 const cors = require('cors');
@@ -44,4 +45,4 @@ app.post('/kwstring', timeout('30s'), function(req, res, next) {
     });
 });
 
-const server = app.listen(process.env.PORT || 5000);
+module.exports.handler = serverless(app);
