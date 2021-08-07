@@ -43,7 +43,4 @@ app.post('/kwstring', timeout('30s'), function(req, res, next) {
     });
 });
 
-const server = app.listen(3000, (error) => {
-    if (error) return console.log(`Error: ${error}`);
-    console.log(`Server listening on port ${server.address().port}`);
-});
+const server = app.listen(process.env.PORT || 5000);
