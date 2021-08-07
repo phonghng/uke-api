@@ -22,6 +22,8 @@
     "cors": "^2.8.5",
     "phonghng-url-kw-extractor": "^1.0.11",
     "puppeteer": "^10.2.0",
-    "puppeteer-core": "^10.2.0"
+    "puppeteer-core": "^10.2.0",
+    "serverless-http": "^2.7.0",
+    "body-parser": "^1.19.0"
   }
 }
