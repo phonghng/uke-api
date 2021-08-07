@@ -2,9 +2,10 @@
   "name": "uke-api",
   "version": "1.0.0",
   "description": "Web API for package phonghng-url-kw-extractor",
-  "main": "index.js",
+  "main": "functions/server.js",
   "scripts": {
-    "test": "node app.js"
+    "build": "netlify-lambda build express",
+    "start": "node server-local.js"
   },
   "keywords": [
     "web",
@@ -23,7 +24,7 @@
     "phonghng-url-kw-extractor": "^1.0.11",
     "puppeteer": "^10.2.0",
     "puppeteer-core": "^10.2.0",
-    "serverless-http": "^2.7.0",
-    "body-parser": "^1.19.0"
+    "netlify-lambda": "^0.4.0",
+    "serverless-http": "^1.6.0"
   }
 }
