@@ -1,0 +1,23 @@
+{
+  "name": "uke-api",
+  "version": "1.0.0",
+  "description": "Web API for package phonghng-url-kw-extractor",
+  "main": "index.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "web",
+    "api",
+    "phonghng-url-kw-extractor",
+    "uke"
+  ],
+  "author": "PhongHNg",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-timeout": "^1.9.0",
+    "express": "^4.17.1",
+    "heroku": "^7.56.1"
+  }
+}
