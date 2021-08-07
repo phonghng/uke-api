@@ -20,6 +20,8 @@
     "express": "^4.17.1",
     "heroku": "^7.56.1",
     "cors": "^2.8.5",
-    "phonghng-url-kw-extractor": "^1.0.11"
+    "phonghng-url-kw-extractor": "^1.0.11",
+    "puppeteer": "^10.2.0",
+    "puppeteer-core": "^10.2.0"
   }
 }
