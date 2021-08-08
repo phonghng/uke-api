@@ -1,6 +1,6 @@
 const express = require('express')
-const uke = require('phonghng-url-kw-extractor')
 const logger = require('morgan')
+const uke = require('phonghng-url-kw-extractor')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
 const cors = require('cors')
