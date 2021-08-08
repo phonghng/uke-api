@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "express": "^4.15.2",
-    "cors": "^2.8.5",
     "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
     "morgan": "~1.9.1",
     "phonghng-url-kw-extractor": "^1.1.2"
   },
