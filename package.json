@@ -12,7 +12,8 @@
   "dependencies": {
     "express": "^4.15.2",
     "cors": "^2.8.5",
-    "body-parser": "^1.19.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
     "phonghng-url-kw-extractor": "^1.1.0"
   },
   "license": "MIT"
