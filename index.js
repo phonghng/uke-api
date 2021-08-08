@@ -39,19 +39,4 @@ express()
             console.error(error);
         }
     })
-    .post('/kwurl-twowords', async function(req, res) {
-        try {
-            uke.get_keyword(req.body.url, false, keywords => {
-                var filtered = Object.keys(keywords)
-                    .filter(key => key.split(" ").length <= 3)
-                    .reduce((obj, key) => {
-                        obj[key] = keywords[key];
-                        return obj;
-                    }, {});
-                res.json(filtered)
-            });
-        } catch (error) {
-            console.error(error);
-        }
-    })
     .listen(PORT, () => console.log(`Listening on ${ PORT }`))
