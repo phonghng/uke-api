@@ -3,11 +3,13 @@ const uke = require('phonghng-url-kw-extractor')
 const logger = require('morgan')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
+const cors = require('cors')
 const PORT = process.env.PORT || 5000
 
 express()
     .use(logger('dev'))
     .use(express.json())
+    .use(cors())
     .use(express.urlencoded({ extended: false }))
     .use(cookieParser())
     .get('/', (req, res) => {
