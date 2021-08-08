@@ -1,8 +1,8 @@
 const express = require('express')
 const uke = require('phonghng-url-kw-extractor')
+const logger = require('morgan')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
-const logger = require('morgan')
 const PORT = process.env.PORT || 5000
 
 express()
