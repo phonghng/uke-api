@@ -43,7 +43,7 @@ express()
         try {
             uke.get_keyword(req.body.url, false, keywords => {
                 var filtered = Object.keys(keywords)
-                    .filter(key => [2, 3].includes(key.split(" ").length))
+                    .filter(key => key.split(" ").length <= 3)
                     .reduce((obj, key) => {
                         obj[key] = keywords[key];
                         return obj;
