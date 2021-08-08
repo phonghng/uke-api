@@ -1,5 +1,6 @@
 const express = require('express')
 const uke = require('phonghng-url-kw-extractor')
+const bodyParser = require('body-parser')
 const PORT = process.env.PORT || 5000
 
 express()
