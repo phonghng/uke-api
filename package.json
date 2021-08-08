@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "^4.15.2",
     "cors": "^2.8.5",
-    "http-errors": "~1.6.3",
+    "cookie-parser": "^1.4.5",
     "morgan": "~1.9.1",
     "phonghng-url-kw-extractor": "^1.1.0"
   },
