@@ -1,1 +1,1 @@
-web: npm test
+web: npm install && npm test
