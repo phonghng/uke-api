@@ -1,18 +1,19 @@
 {
-  "name": "uke-api",
-  "version": "1.0.0",
-  "description": "Web API for NodeJS Package phonghng-url-kw-extractor",
-  "main": "index.js",
+  "name": "node-js-getting-started",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
   "engines": {
-    "node" : "14.x"
+    "node": "14.x"
   },
+  "main": "index.js",
   "scripts": {
-    "test": "node app.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.15.2",
     "cors": "^2.8.5",
     "body-parser": "^1.19.0",
     "phonghng-url-kw-extractor": "^1.1.0"
-  }
+  },
+  "license": "MIT"
 }
