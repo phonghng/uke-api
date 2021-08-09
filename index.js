@@ -4,13 +4,21 @@ const logger = require('morgan')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const PORT = process.env.PORT || 5000
+const jsdom = require("jsdom")
+
+const { JSDOM } = jsdom;
+const { window } = new JSDOM();
+const { document } = new JSDOM("").window;
+global.document = document;
+const $ = (jQuery = require("jquery")(window));
 
 express()
     .use(logger('dev'))
     .use(express.json())
     .use(cors())
-    .use(express.urlencoded({ extended: false }))
+    .use(express.urlencoded({
+        extended: false
+    }))
     .use(cookieParser())
     .get('/', (req, res) => {
         res.writeHead(302, {
@@ -39,4 +47,19 @@ express()
             console.error(error);
         }
     })
-    .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+    .get("/kwurl-twowords/:url", async function(req, res, next) {
+        try {
+            uke.get_keyword(decodeURIComponent(req.params.url), false, keywords => {
+                var filtered = Object.keys(keywords)
+                    .filter(key => key.split(" ").length <= 3)
+                    .reduce((obj, key) => {
+                        obj[key] = keywords[key];
+                        return obj;
+                    }, {});
+                res.json(Object.keys(filtered));
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    })
+    .listen(5000, () => console.log(`Listening on 5000`))
