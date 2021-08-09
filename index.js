@@ -6,6 +6,8 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const jsdom = require("jsdom")
 
+const PORT = process.env.PORT || 5000;
+
 const { JSDOM } = jsdom;
 const { window } = new JSDOM();
 const { document } = new JSDOM("").window;
@@ -62,4 +64,4 @@ express()
             console.log(error);
         }
     })
-    .listen(5000, () => console.log(`Listening on 5000`))
+    .listen(PORT, () => console.log("Listening on " + PORT))
