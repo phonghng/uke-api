@@ -20,5 +20,9 @@
     "puppeteer": "^10.2.0",
     "@babel/core": "^7.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/phonglan123/uke-api.git"
+  }
 }
