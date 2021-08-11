@@ -18,7 +18,7 @@
     "jsdom": "^16.7.0",
     "jquery": "^3.6.0",
     "puppeteer": "^10.2.0",
-    "puppeteer-core": "^10.20"
+    "puppeteer-core": "^10.2.0"
   },
   "license": "MIT"
 }
