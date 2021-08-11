@@ -17,7 +17,8 @@
     "phonghng-url-kw-extractor": "^1.1.4",
     "jsdom": "^16.7.0",
     "jquery": "^3.6.0",
-    "puppeteer": "^10.2.0"
+    "puppeteer": "^10.2.0",
+    "@babel/core@": "^7.0.0"
   },
   "license": "MIT"
 }
