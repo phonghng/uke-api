@@ -7,7 +7,6 @@
   },
   "main": "index.js",
   "scripts": {
-    "postinstall": "node install.js",
     "start": "node index.js"
   },
   "dependencies": {
@@ -17,7 +16,9 @@
     "morgan": "~1.9.1",
     "phonghng-url-kw-extractor": "^1.1.4",
     "jsdom": "^16.7.0",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "puppeteer": "^10.2.0",
+    "puppeteer-core": "^10.20"
   },
   "license": "MIT"
 }
