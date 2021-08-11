@@ -17,13 +17,7 @@
     "phonghng-url-kw-extractor": "^1.1.4",
     "jsdom": "^16.7.0",
     "jquery": "^3.6.0",
-    "puppeteer": "^10.2.0",
-    "puppeteer-core": "^10.2.0",
-    "pending-xhr-puppeteer": "^2.3.3",
-    "puppeteer-extra": "^3.1.18",
-    "puppeteer-extra-plugin-adblocker": "^2.11.11",
-    "puppeteer-extra-plugin-block-resources": "^2.2.9",
-    "puppeteer-extra-plugin-stealth": "^2.7.8"
+    "puppeteer": "^10.2.0"
   },
   "license": "MIT"
 }
