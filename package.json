@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "postinstall": "PUPPETEER_PRODUCT=firefox node install.js",
+    "preinstall": "PUPPETEER_PRODUCT=firefox npm install puppeteer",
     "start": "node index.js"
   },
   "dependencies": {
