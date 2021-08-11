@@ -1,1 +1,1 @@
-web: npm install && npm audit fix && npm start
+web: npm install && npm install puppeteer --save-dev && npm audit fix && npm start
