@@ -14,7 +14,7 @@
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "morgan": "~1.9.1",
-    "phonghng-url-kw-extractor": "^1.1.2",
+    "phonghng-url-kw-extractor": "^1.1.3",
     "jsdom": "^16.7.0",
     "jquery": "^3.6.0"
   },

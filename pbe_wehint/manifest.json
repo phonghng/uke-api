@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "PBE Wehint", // PhongHNg Browser Extension - Web history interest
+    "version": "1.0.0",
+    "browser_action": {
+        "default_popup": "./popup.html"
+    },
+	"permissions": [
+		"storage",
+		"tabs",
+		"*://uke-api.herokuapp.com/*"
+	],
+    "background": { 
+    	"scripts": ["jquery-3.6.0.js", "background.js"] 
+    }
+}
